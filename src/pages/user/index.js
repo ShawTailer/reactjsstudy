@@ -1,6 +1,6 @@
 const HomePage=() =>{
     return<>
-        <div style={{color: 'red',fontSize:'25px'}}>
+        <div style={{color: 'blue',fontSize:'25px'}}>
             Hello
         </div> 
     </>
