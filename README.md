@@ -6,6 +6,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+npm install
+
+npm install react-router-dom
+npm install link ( idont remember exact comment)
+
 ### `npm start`
 
 Runs the app in the development mode.\
