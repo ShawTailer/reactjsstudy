@@ -1,7 +1,6 @@
 const MasterLayout = ({children, ...props}) => {
     return (
         <div>
-            <>hello</>
             {children}
         </div>
     );

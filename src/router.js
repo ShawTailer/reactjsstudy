@@ -1,8 +1,10 @@
-import HomePage from "./pages/user/index.js";
+import HomePage from "./pages/user/body/index.js";
 import AdminPage from "./pages/admin/index.js";
 import { ROUTERS } from "./utils/router";
 import { Route,Routes } from "react-router-dom";
 import MasterLayout from "./pages/masterLayout/index.js";
+import Header from "./pages/user/header/index.js";
+import Login from "./pages/user/theme/login.js";
 const renderUserRouter = () => {
     const userRouters = [
         {
@@ -13,8 +15,15 @@ const renderUserRouter = () => {
             path: ROUTERS.USER.USERPAGE,
             component: <AdminPage/>
         },
+        {
+            path: ROUTERS.USER.LOGIN,
+            component: <Login/>
+        },
     ]
     return (
+        <>
+        <Header>
+        </Header>
         <MasterLayout>
         <Routes>
             {
@@ -23,6 +32,8 @@ const renderUserRouter = () => {
             ))}
         </Routes>
         </MasterLayout>
+        
+        </>
     );
 }
 
