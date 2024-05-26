@@ -1,7 +1,7 @@
 import HomePage from "./pages/user/body/index.js";
 import AdminPage from "./pages/admin/index.js";
 import { ROUTERS } from "./utils/router";
-import { Route,Routes,Router } from "react-router-dom";
+import { Route,Routes } from "react-router-dom";
 import MasterLayout from "./pages/masterLayout/index.js";
 import Header from "./pages/user/header/index.js";
 import Login from "./pages/user/theme/login.js";
@@ -21,8 +21,9 @@ const renderUserRouter = () => {
         },
     ]
     return (
-        <Router>
+        <>
         <Header>
+        </Header>
         <MasterLayout>
         <Routes>
             {
@@ -31,8 +32,8 @@ const renderUserRouter = () => {
             ))}
         </Routes>
         </MasterLayout>
-        </Header>
-        </Router>
+        
+        </>
     );
 }
 
