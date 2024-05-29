@@ -22,8 +22,7 @@ const renderUserRouter = () => {
     ]
     return (
         <>
-        <Header>
-        </Header>
+        <Header/>
         <MasterLayout>
         <Routes>
             {
